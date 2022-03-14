@@ -23,7 +23,6 @@ public class Main {
         myPatinete.setHeight(1.68);
         System.out.println(myPatinete.getHeight());
         
-        myPatinete.setPhoneNumber(12345678);
-        System.out.println(myPatinete.getPhoneNumber());
+        
     }
 }
