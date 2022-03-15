@@ -6,7 +6,7 @@ public class Doctor extends User {
     //Atributos
     private String speciality;
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name, email);
     }
 
@@ -26,6 +26,12 @@ public class Doctor extends User {
 
     public ArrayList<AvailableAppointment> getAvailableAppointments(){
         return availableAppointments;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
     }
 
     public static class AvailableAppointment{
@@ -62,5 +68,19 @@ public class Doctor extends User {
             this.id = id;
         }
         
+        @Override
+        public String toString() {
+            // TODO Auto-generated method stub
+            return "Available Appointments \nDate: " + date + "\nTime: " + time;
+        }
+
+        
+    }
+
+    @Override
+    public void showDataUser() {
+        // TODO Auto-generated method stub
+        System.out.println("Hospital: Cruz Roja");
+        System.out.println("Departamento: Urologia");
     }
 }

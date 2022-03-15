@@ -7,7 +7,7 @@ public class Patiente extends User {
     private String blood;
 
     //Métodos
-    Patiente(String name, String email){
+    public Patiente(String name, String email){
         super(name, email);
     }
 
@@ -27,5 +27,18 @@ public class Patiente extends User {
         return this.weight + " Kg.";
     }
 
-    
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood; 
+    }
+
+    @Override
+    public void showDataUser() {
+        // TODO Auto-generated method stub
+        System.out.println("Paciente");
+        System.out.println("Historial desde Nacimiento");
+    }
+
+        
 }
