@@ -6,5 +6,5 @@ import java.sql.Date;
  * ISchedule
  */
 public interface ISchedule {
-    void schedule(Date date, String time)    
+    void schedule(Date date, String time); 
 }
